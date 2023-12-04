@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ur Smart Ecosystem</title>
+
+  <link rel="shortcut icon" href="./images/fav-logo.png" />
+  <!-- Style Css -->
+  <link rel="stylesheet" id="stylesheet" href="css/landingPage.css">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Icons  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body id="body-layout"
+  class="text-body-md relative font-sans font-normal text-gray-700 dark:text-gray-300 bg-surface-200 dark:bg-surfacedark-200">
+
+  <!-- preloader -->
+  <div class="preloader fixed inset-0 z-50 bg-surface-500 dark:bg-surfacedark-500">
+    <div class="w-full h-screen flex justify-center items-center">
+      <!-- loader -->
+      <svg class="circular-loader relative w-[100px] h-[100px]">
+        <circle class="path stroke-primary-600 dark:stroke-primary-200" cx="50" cy="50" r="20" fill="none"
+          stroke-width="5" stroke-miterlimit="10"></circle>
+      </svg>
+    </div>
+  </div>
+  <header class="max-w-full md:px-6 lg:px-8 mx-auto bg-surface-200 dark:bg-gray-900">
+    <!-- navbar -->
+    <nav class="relative flex flex-col md:flex-row justify-between items-center w-full">
+      <div class="min-h-[80px] md:min-h-[60px] px-4 flex flex-row w-full md:w-auto justify-between items-center">
+        <!-- logo -->
+        <a href="index.html" class="sidebar-logo pt-4 pb-2 flex items-center w-full">
+          <img class="h-10 w-auto high-quality" src="./images/logo-horizontal.svg" alt="logo">
+          <h4 class="text-2xl font-medium tracking-wide text-gray-900 dark:text-gray-100 compact-hide ml-2">
+            USE</h4>
+        </a>
+
+        <button data-type="toggle" data-target="#navbar-id"
+          class="group relative !inline-flex md:!hidden !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] tracking-[.00714em] text-center font-medium hover:bg-surface-300 focus:bg-surface-400 dark:text-primary-200 dark:hover:bg-surfacedark-300 dark:focus:bg-surfacedark-400 !text-4xl">
+          <span class="material-symbols-outlined group-[.show]:!hidden">menu</span>
+          <span class="material-symbols-outlined !hidden group-[.show]:!block">close</span>
+        </button>
+      </div>
+
+      <!-- menu -->
+      <div id="navbar-id"
+        class="nav [&.show]:!opacity-100 [&.show]:!visible [&.show]:!h-auto max-md:[&.show]:bg-surface-100 max-md:dark:[&.show]:bg-surfacedark-100 opacity-0 invisible md:visible flex opacity-1 h-0 md:h-auto md:opacity-100 absolute top-full left-0 right-0 md:relative z-40 flex-col md:flex-row items-center pb-6 md:pb-0 duration-[400ms] ease-[cubic-bezier(0.2, 0, 0, 1)]">
+        <a href="index.html"
+          class="active relative flex flex-col justify-center items-center w-11/12 md:w-auto p-6 hover:bg-white dark:hover:bg-surfacedark-100 hover:bg-opacity-80 dark:hover:bg-opacity-80 gap-6">
+          <p class="text-sm tracking-[.00714em]">Home</p>
+          <span class="indicator w-12 md:w-full absolute bottom-0 h-0.5 rounded-t-full"></span>
+        </a>
+        <a href="pages/auth/signup.html"
+          class="relative flex flex-col justify-center items-center w-11/12 md:w-auto p-6 hover:bg-surface-100 dark:hover:bg-surfacedark-100 hover:bg-opacity-80 dark:hover:bg-opacity-80 gap-6">
+          <p class="text-sm tracking-[.00714em]">Sign Up</p>
+          <span class="indicator w-12 md:w-full absolute bottom-0 h-0.5 rounded-t-full"></span>
+        </a>
+
+        <hr
+          class="opacity-0 lg:opacity-100 self-stretch h-8 my-auto mr-6 border-r border-solid border-gray-200 dark:border-gray-700">
+
+        <!-- btn action -->
+        <div class="flex flex-row gap-4 items-center">
+          <div class="relative" aria-label="Light & Dark mode" data-microtip-position="bottom" role="tooltip">
+            <!-- light & dark -->
+            <button data-type="theme" id="lightdark"
+              class="btn-outline relative flex flex-row items-center justify-center w-8 h-8 gap-x-2 py-2 px-4 rounded-full text-sm tracking-[.00714em] font-medium border border-gray-500 text-primary-600 dark:border-gray-400 dark:text-primary-200">
+              <span class="material-symbols-outlined !text-base dark-hidden">light_mode</span>
+              <span class="material-symbols-outlined !text-base dark-block">dark_mode</span>
+            </button>
+          </div>
+
+          <div class="relative" aria-label="Login" data-microtip-position="bottom" role="tooltip">
+            <a href="pages/auth/login.html"
+              class="btn-outline relative flex flex-row items-center justify-center w-8 h-8 gap-x-2 py-2 px-4 rounded-full text-sm tracking-[.00714em] font-medium border border-gray-500 text-primary-600 dark:border-gray-400 dark:text-primary-200">
+              <span class="material-symbols-outlined !text-base">Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="relative overflow-hidden">
+    <!-- Hero -->
+    <div class="relative max-w-full py-14 md:py-16 px-4 sm:px-6 lg:px-12 mx-auto bg-gray-200 dark:bg-gray-800">
+      <div class="absolute inset-0 bg-surface-200 dark:bg-surfacedark-200"></div>
+      <div class="z-30 relative grid lg:grid-cols-2 gap-8">
+        <div class="flex flex-col justify-center items-start">
+          <div class="mb-8 md:px-12 lg:px-0">
+            <h1
+              class="text-[2.6rem] sm:text-[3.5625rem] leading-tight sm:leading-[4rem] font-normal text-grey-700 dark:text-primary-10 mb-2">
+              Ur Smart Ecosystem
+            </h1>
+
+            <p class="text-body-lg">
+              Dengan USE membantu mengontrol perangkat tanpa mengorbankan kenyamanan
+            </p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="text-center">
+            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-gray-700 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800"
+              href="/pages/auth/signup.html">
+              Mulai sekarang
+              <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hidden w-full md:flex justify-center">
+          <img class="max-w-full h-auto w-full rounded-xl border-[10px] border-gray-500 dark:border-surfacedark-500"
+            src="./images/logo-horizontal.svg" alt="hero">
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="max-w-full py-14 md:py-20 px-4 sm:px-6 lg:px-12 mx-auto bg-white dark:bg-gray-900">
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Block -->
+        <div class="relative flex">
+          <div
+            class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium bg-surface-300 dark:text-primary-200 dark:bg-surfacedark-300">
+            key</div>
+          <div class="ml-6">
+            <h3 class="text-title-lg text-primary-900 dark:text-primary-10 mb-2">Easy to Use
+            </h3>
+            <p class="text-sm tracking-[0.25px]">Mudah digunakan oleh siapa saja.</p>
+          </div>
+        </div>
+
+        <!-- Block -->
+        <div class="relative flex">
+          <div
+            class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium bg-surface-300 dark:text-primary-200 dark:bg-surfacedark-300">
+            Smartphone</div>
+          <div class="ml-6">
+            <h3 class="text-title-lg text-primary-900 dark:text-primary-10 mb-2">Responsive</h3>
+            <p class="text-sm tracking-[0.25px]">Responsive, dan dapat digunakan diberbagai platform.</p>
+          </div>
+        </div>
+
+        <!-- Block -->
+        <div class="relative flex">
+          <div
+            class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium bg-surface-300 dark:text-primary-200 dark:bg-surfacedark-300">
+            Tune</div>
+          <div class="ml-6">
+            <h3 class="text-title-lg text-primary-900 dark:text-primary-10 mb-2">Customizable</h3>
+            <p class="text-sm tracking-[0.25px]">Komponen mudah di kustomisasi oleh user.</p>
+          </div>
+        </div>
+
+        <!-- Block -->
+        <div class="relative flex">
+          <div
+            class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium bg-surface-300 dark:text-primary-200 dark:bg-surfacedark-300">
+            dark_mode</div>
+          <div class="ml-6">
+            <h3 class="text-title-lg text-primary-900 dark:text-primary-10 mb-2">Dark Mode</h3>
+            <p class="text-sm tracking-[0.25px]">Semua komponen memiliki mode gelap, situs Anda memiliki
+              tampilan berbeda saat mode gelap aktif.</p>
+          </div>
+        </div>
+
+        <!-- Block -->
+        <div class="relative flex">
+          <div
+            class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium bg-surface-300 dark:text-primary-200 dark:bg-surfacedark-300">
+            Description</div>
+          <div class="ml-6">
+            <h3 class="text-title-lg text-primary-900 dark:text-primary-10 mb-2">Documentation</h3>
+            <p class="text-sm tracking-[0.25px]">Setiap komponen dan plugin didokumentasikan dengan baik.
+            </p>
+          </div>
+        </div>
+
+        <!-- Block -->
+        <div class="relative flex">
+          <div
+            class="material-symbols-outlined relative !inline-flex !items-center justify-center w-12 h-12 gap-x-2 py-2.5 px-6 rounded-[6.25rem] text-sm tracking-[.00714em] text-center font-medium bg-surface-300 dark:text-primary-200 dark:bg-surfacedark-300">
+            Chat</div>
+          <div class="ml-6">
+            <h3 class="text-title-lg text-primary-900 dark:text-primary-10 mb-2">24/7 Support
+            </h3>
+            <p class="text-sm tracking-[0.25px]">Hubungi kami setiap saat untuk bantuan.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="max-w-full py-14 md:py-20 px-4 sm:px-6 lg:px-12 mx-auto bg-surface-200 dark:bg-surfacedark-200">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 py-8">
+        <div class="flex flex-col w-full px-6 md:pr-12 justify-center items-center">
+          <div
+            class=" relative w-full h-[300px] sm:h-[350px] rounded-xl border-surface-500 dark:border-surfacedark-500">
+            <img src="/images/logo-horizontal.svg" class="absolute max-w-full h-auto w-full" alt="landing page">
+          </div>
+        </div>
+
+        <!-- processs vertical -->
+        <ol class="flex flex-col gap-4 w-full">
+          <li class="flex">
+            <div class="relative flex-shrink-0 w-16 text-center">
+              <span
+                class="absolute left-1/3 top-12 -bottom-8 border-l-2 border-dashed border-gray-200 dark:border-gray-700"></span>
+              <div
+                class="flex items-center justify-center w-12 h-12 mr-auto rounded-full p-2 bg-surface-300 dark:bg-surfacedark-300 border border-gray-200 dark:border-gray-800">
+                <span class="text-title-md text-primary-600 dark:text-primary-200">1</span>
+              </div>
+            </div>
+
+            <div class="ml-4 mb-4 lg:ml-6">
+              <h3 class="text-title-lg text-gray-900 dark:text-gray-100 mb-2">Ready to use Charts and Graphs</h3>
+              <p class="text-body-lg">Visualize your data in a meaningful and engaging way, allowing users to grasp
+                insights at a glance.</p>
+            </div>
+          </li>
+
+          <li class="flex">
+            <div class="relative flex-shrink-0 w-16 text-center">
+              <span
+                class="absolute left-1/3 top-12 -bottom-8 border-l-2 border-dashed border-gray-200 dark:border-gray-700"></span>
+              <div
+                class="flex items-center justify-center w-12 h-12 mr-auto rounded-full p-2 bg-surface-300 dark:bg-surfacedark-300 border border-gray-200 dark:border-gray-800">
+                <span class="text-title-md text-primary-600 dark:text-primary-200">2</span>
+              </div>
+            </div>
+
+            <div class="ml-4 mb-4 lg:ml-6">
+              <h3 class="text-title-lg text-gray-900 dark:text-gray-100 mb-2">Many choices of widgets</h3>
+              <p class="text-body-lg">These dynamic elements provide real-time updates and make your dashboard more
+                engaging and informative.</p>
+            </div>
+          </li>
+
+          <li class="flex">
+            <div class="relative flex-shrink-0 w-16 text-center">
+              <span
+                class="absolute left-1/3 top-12 -bottom-8 border-l-2 border-dashed border-gray-200 dark:border-gray-700"></span>
+              <div
+                class="flex items-center justify-center w-12 h-12 mr-auto rounded-full p-2 bg-surface-300 dark:bg-surfacedark-300 border border-gray-200 dark:border-gray-800">
+                <span class="text-title-md text-primary-600 dark:text-primary-200">3</span>
+              </div>
+            </div>
+
+            <div class="ml-4 mb-4 lg:ml-6">
+              <h3 class="text-title-lg text-gray-900 dark:text-gray-100 mb-2">Data Tables &amp; Forms Input</h3>
+              <p class="text-body-lg">Display tabular data in an organized and structured manner using Goodash's data
+                table component.</p>
+            </div>
+          </li>
+
+          <li class="flex">
+            <div class="relative flex-shrink-0 w-16 text-center">
+              <span
+                class="absolute left-1/3 top-12 -bottom-8 border-l-2 border-dashed border-gray-200 dark:border-gray-700"></span>
+              <div
+                class="flex items-center justify-center w-12 h-12 mr-auto rounded-full p-2 bg-surface-300 dark:bg-surfacedark-300 border border-gray-200 dark:border-gray-800">
+                <span class="text-title-md text-primary-600 dark:text-primary-200">4</span>
+              </div>
+            </div>
+
+            <div class="ml-4 mb-4 lg:ml-6">
+              <h3 class="text-title-lg text-gray-900 dark:text-gray-100 mb-2">Data Tables &amp; Forms Input</h3>
+              <p class="text-body-lg">Display tabular data in an organized and structured manner using Goodash's data
+                table component.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="max-w-full py-14 md:py-20 px-4 sm:px-6 lg:px-12 mx-auto bg-white dark:bg-gray-900">
+      <class class="relative overflow-hidden">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
+          <div class="text-center">
+            <h1 class="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-gray-200">
+              Coming Soon</h1>
+
+            <p class="mt-3 text-gray-600 dark:text-gray-400">Stay in the know with insights
+              from industry experts.</p>
+          </div>
+        </div>
+      </class>
+    </div>
+
+  </main>
+
+  <!-- footer start -->
+  <footer
+    class="max-w-full px-4 sm:px-6 lg:px-12 mx-auto bg-gray-900 dark:bg-black text-gray-300 text-body-lg flex flex-col">
+    <div class="py-10 md:py-16 flex flex-wrap flex-row justify-between">
+      <!-- left widget -->
+      <div class="max-w-full w-full lg:w-1/2 px-4 mb-7 lg:mb-0 leading-relaxed">
+        <!-- Footer Content -->
+        <p class="mb-3">Erfahtech memperkenalkan "USE ur Smart Ecosystem," sebuah inovasi terkini. Dengan fokus
+          pada konektivitas dan otomatisasi, USE memberikan pengalaman pengguna yang efisien dan mulus,
+          merangkul pengelolaan dan integrasi perangkat pintar untuk meningkatkan gaya hidup modern.</p>
+        <p class="flex gap-2 mb-3">
+          <span class="material-symbols-outlined">mail</span>
+          erfahtech@gmail.com
+        </p>
+      </div>
+
+      <!-- center widget -->
+      <div class="max-w-full w-full lg:w-1/3 px-4 mb-7 lg:mb-0">
+        <!-- Footer Content -->
+        <div class="flex flex-wrap leading-relaxed flex-row -mx-4">
+          <div class="flex-shrink max-w-full w-1/2 px-4">
+            <ul class="space-y-2">
+              <li><a class="hover:text-gray-100" href="#">About us</a></li>
+              <li><a class="hover:text-gray-100" href="#">Contact us</a></li>
+              <li><a class="hover:text-gray-100" href="#">Privacy policy</a></li>
+              <li><a class="hover:text-gray-100" href="#">Term of use</a></li>
+            </ul>
+          </div>
+          <div class="flex-shrink max-w-full w-1/2 px-4">
+            <ul class="space-y-2">
+              <li><a class="hover:text-gray-100" href="#">Popular post</a></li>
+              <li><a class="hover:text-gray-100" href="#">Blogs</a></li>
+              <li><a class="hover:text-gray-100" href="#">Events</a></li>
+              <li><a class="hover:text-gray-100" href="#">Career</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright  -->
+    <div class="py-9 w-full text-center border-t border-blue-200 border-opacity-10">
+      <p>UI Design by <a class="text-primary-600 dark:text-primary-200 hover:underline md:mr-3"
+          href="https://m3.material.io/" target="_blank">Google Material Design</a></p>
+      <p>Development by <a class="text-primary-600 dark:text-primary-200 hover:underline" href="#"
+          target="_blank">USE</a></p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <script type="module" src="js/tailmate.js"></script>
+</body>
+
+</html>
