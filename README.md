@@ -14,11 +14,9 @@ Setiap bab buku ini berisi instruksi praktis untuk pembaca pemula. Setiap bab di
 
 ![Dito](https://github.com/erfahtech/bukpedp3_ursmartecosystem/assets/91595733/0169f779-83b9-4a8b-9e2c-29939e6795ff)
 
-
 **Penulis 2 :** Auliana Fahrian Bani Ridwan, Putra kelahiran Kalimantan yang menempuh perjalanan pendidikan menarik di tanah orang. Memulai Pendidikan dasar di dekat rumah. Perjalanan pendidikannya membawanya jauh dari rumah sejak tingkat sekolah menengah pertama, dan semangat belajarnya membawanya ke tingkat pendidikan yang lebih tinggi, meneruskan pendidikannya hingga tingkat D4 di Politeknik Pos Indonesia, yang kini telah bergabung dengan Stimlog menjadi Universitas Logistik dan Bisnis Internasional. Ketertarikannya pada bidang IT yang telah muncul sejak bangku sekolah menggiringnya untuk memilih jalur pendidikan yang sesuai dengan passionnya.
 
 ![aupa](https://github.com/erfahtech/bukpedp3_ursmartecosystem/assets/91595733/831ad91d-d8bc-4284-b48a-eb457958feca)
-
 
 **Penulis 3 :** Mohammad Nurkamal Fauzan, memperoleh gelar Magister Teknologi Informasi dari ITB pada tahun 2011. Pernah menjadi Dosen pada Departemen Teknik Informatika Pos Indonesia Politeknik, sejak tahun 2011. Minat penelitiannya saat ini meliputi Internet of Things dan Machine Learning.
 
